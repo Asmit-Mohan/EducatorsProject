@@ -1,0 +1,58 @@
+<%- include('header.ejs')%>
+<%- include('flash.ejs')%>
+<div class="original">
+    <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+        <h4 class="card-title mt-3 text-center">Create Account</h4>
+        <p>
+            <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-google"></i>   Login via Gmail</a>
+            <br />
+            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via Facebook</a>
+        </p>
+        <p class="divider-text">
+            <span class="bg-light">OR</span>
+        </p>
+        <form action="/employee/save" class="page" method="post">
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+            <input name="name" class="form-control" placeholder="Full name" type="text" autocomplete="off"  required/>
+        </div> 
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+             </div>
+            <input name="email" class="form-control" placeholder="Email address" type="email" required autocomplete="off"/>
+        </div> 
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+            </div>
+            <input name="mobile" class="form-control" placeholder="Phone number" type="text" required autocomplete="off"/>
+        </div> 
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input name="password" class="form-control" placeholder="Create password" type="password" required autocomplete="off"/>
+        </div>
+
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-picture-o"></i> </span>
+            </div>
+            <input name="image" class="form-control" placeholder="Your image id, it will be between /d/ and /view" type="text" required autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        </div>
+        <p class="text-center">Have an account? <a href="/Template/signin">Log In</a> </p>                                                                 
+    </form>
+    </article>
+    </div> 
+    
+    </div> 
+
+<%- include('footer.ejs')%>

@@ -1,0 +1,460 @@
+
+/*About us page starts*/
+
+.about-section
+{
+    overflow: hidden;
+    padding: 100px 0;
+    margin-top: -80px;
+    margin-bottom: -150px;
+    margin-left: 250px;
+}
+
+.inner-container
+{
+    width: 80%;
+    height:30%;
+    background-color:white;
+    padding: 150px;
+}
+
+.inner-container h1
+{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text
+{
+    font-size: 13px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.skills
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px)
+{
+    .inner-container
+    {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+    .about-section
+    {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .about-section
+    {
+        padding: 0;
+    }
+    .inner-container
+    {
+        padding: 60px;
+    }
+}
+
+.contact
+{
+    color:blue;
+    text-decoration: none;
+}
+
+.mail
+{
+    color:blue;
+    text-decoration: none;
+}
+.mail:hover
+{
+     text-decoration: none;
+     color:chartreuse;
+}
+
+/*About us page ends*/
+
+/*Footer starts*/
+.foot
+{
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background:#DCDCDC;
+            text-align: center;
+}
+/*Footer ends*/
+
+.icon
+{
+    font-size: 2.0em;
+}
+
+/*Contact us starts*/
+
+body
+{
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+
+.contact-form
+{
+    background-color:white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+.contact-form .form-control
+{
+    border-radius:1rem;
+}
+.contact-image
+{
+    text-align: center;
+}
+.contact-image img
+{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form
+{
+    padding: 14%;
+}
+.contact-form form .row
+{
+    margin-bottom: -7%;
+}
+.contact-form h3
+{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact
+{
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+/*Contact us ends*/
+
+/*Login Page starts*/
+
+.container1
+{
+    border:2px solid white;
+    text-align:center;
+    height:500px;
+    width:700px;
+    margin-left:27%;
+    background-color: white;
+}
+
+.main
+{
+    padding:30px;
+}
+h4
+{
+    margin:auto;
+}
+.row1
+{
+    height:40px;
+    width:150px;
+    background-color: #405D9D;;
+    margin-left: 260px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color:white;
+}
+
+/*Login Page Ends*/
+
+
+/*sign up starts*/
+
+.divider-text
+{
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span
+{
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook
+{
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter
+{
+    background-color: red;
+    color: #fff;
+}
+
+.original
+{
+    padding: 30px;
+    margin-bottom: 100px;
+    width:70%;
+    margin-left: 15%;
+}
+.page
+{
+    width:500px;
+    margin-left: -30px;
+}
+/*sign up ends*/
+
+/*verifyOtp Starts*/
+
+.cards 
+{
+    margin-top: 10%;
+    width: 500px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    height: 350px;
+    position: relative
+}
+
+.mobile-text
+{
+    font-family: cursive;
+    font-size: 15px
+}
+
+/*verifyOtp Ends*/
+
+/*profile page starts*/
+
+.emp-profile
+{
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img img
+{
+    width: 50%;
+    height: 50%;
+}
+
+.profile-head h5
+{
+    color: #333;
+}
+
+.proile-rating
+{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span
+{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs
+{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link
+{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active
+{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+
+.profile-tab label
+{
+    font-weight: 600;
+}
+.profile-tab p
+{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+/*Profile page ends*/
+
+/*404 Error Page Starts*/
+
+#notfound
+{
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound
+{
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404
+{
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1
+{
+  font-family: 'Maven Pro', sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound h2
+{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.notfound h5
+{
+  font-family: 'Maven Pro', sans-serif;
+  color:black;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p
+{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background:chocolate;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-top: 5%;
+}
+
+.notfound a:hover
+{
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+/*404 Error Page Ends*/

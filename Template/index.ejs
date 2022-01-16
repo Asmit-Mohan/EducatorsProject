@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+  integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+    <body>
+        <div class="header" id="topheader">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container text-capitalize p-2">
+                <a class="navbar-brand font-weight-bold text-red-50" href="#">Educators</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto text-capitalize">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/Template/index">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Template/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Template/contact">Enquiry</a>
+                      </li>
+                      <% if(flag==1)
+                      {%>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Template/signin">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Template/signup">Sign up</a>
+                      </li>
+                      <%}
+                      else
+                      {%>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Template/signout">Sign out</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Template/profile"><%= Studentusername%></a>
+                      </li>
+                      <%}%>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <section class="header-section">
+                <div class="center-div">
+                    <h1 class="font-weight-bold">We Are The Educators</h1>
+                    <p>We Provide World Best Courses</p>
+                </div>
+            </section>
+        </div>
+        <!--*********************Header Part Overs Here**********************-->
+        <Section class="header-extradiv">
+            <div class="container">
+              <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa-3x fa fa-database" aria-hidden="true"></i></a>
+                    <h2>Databases</h2>
+                    <p>
+                        In this courses, you will cover transactional relational databases, business intelligence and Data warehousing, NoSQL technologies, and reliable, scalable and maintainable data intensive applications that will prepare you for a specialized information system consultant or data scientist. 
+                    </p>
+                </div>
+
+                <div class=" extra-div col-lg-4 col-md-4 col-12">
+                  <a href="#"><i class="fa-3x fa fa-mobile" aria-hidden="true"></i></a>
+                  <h2>Android</h2>
+                  <p> In this course, you’ll learn the basics of building Android apps with the Kotlin programming language.You’ll learn how to build your first Android app using Android Studio, how to run your app on a device or emulator, and how to add an interactive button that displays a second screen when the button is clicked.</p>
+              </div>
+
+              <div class="extra-div col-lg-4 col-md-4 col-12">
+                <a href="#"><i class="fa-3x fa fa-microchip" aria-hidden="true"></i></a>
+                <h2>Microcontrollers</h2>
+                <p>In this course, you’ll learn Embedded Software and Hardware Architecture,  will use hardware tools to program and debug microcontrollers with bare-metal firmware. Using a Texas Instruments MSP432 Development Kit, you will configure a variety of peripherals, write numerous programs, and see your work execute on your own embedded platform!</p>
+            </div>
+
+              </div>
+            </div>
+        </Section>
+
+        <!--*********************3 Box Part Overs Here**********************-->
+        <section class="serviceoffers" id="servicediv">
+            <div class="container headings text-center">
+              <h1 class="text-center font-weight-bold">WHAT DO WE OFFER</h1>
+              <p class="text-center">You showed me that anything is possible with faith, hard work and
+                determination.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0">
+                      <div class="names my-3">
+                        <h1>KOTLIN</h1>
+                        <div class="progress w-75">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+                        </div>
+                      </div>
+
+                      <div class="names my-3">
+                        <h1>MICROCONTROLLER</h1>
+                        <div class="progress w-75">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:90%">90%</div>
+                      </div>
+                    </div>
+
+                      <div class="names my-3">
+                        <h1>JAVASCRIPT</h1>
+                        <div class="progress w-75">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:80%">80%</div>
+                      </div>
+                      </div>
+
+                      <div class="names my-3">
+                        <h1>MONGO DB</h1>
+                        <div class="progress w-75">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+                      </div>
+                      </div>
+
+                      <div class="names my-3">
+                        <h1>NODE JS</h1>
+                        <div class="progress w-75">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:80%">80%</div>
+                      </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12 col-12 servicediv">
+                        <div class="row">
+                          <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fa fa-desktop" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-lg-10 col-10">
+                            <h2>Website and App Development</h2>
+                            <p>As a job seeker,if you read the complete book, I am sure you will be able to challenge the
+                              interviewers.</p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fa fa-microchip" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-lg-10 col-10">
+                            <h2>Microcontroller</h2>
+                            <p>As a job seeker,if you read the complete book, I am sure you will be able to challenge the
+                              interviewers.</p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fa fa-code" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-lg-10 col-10">
+                            <h2>Data Structure</h2>
+                            <p>As a job seeker,if you read the complete book, I am sure you will be able to challenge the
+                              interviewers.</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+
+        <section class="project-work">
+          <div class="container headings text-center">
+            <p class="text-center font-weight-bold">MORE THAN 2,000 STUDENTS ENROLLED</p>
+          </div>
+          <div class="container d-flex justify-content-around align-items-center text-center">
+            <div>
+              <h1 class="count">500</h1>
+              <p>Website Development</p>
+            </div>
+
+            <div>
+              <h1 class="count">800</h1>
+              <p>Android Development</p>
+            </div>
+
+            <div>
+              <h1 class="count">600</h1>
+              <p>Microcontroller</p>
+            </div>
+
+            <div>
+              <h1 class="count">600</h1>
+              <p>Data Structure and Algorithms</p>
+            </div>
+          </div>
+          </section>
+          
+          <section class="pricing" id="pricingdiv">
+            <div class="container headings text-center">
+              <h1 class="text-center font-weight-bold text-white">OUR BEST PRICING</h1>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="card text-center">
+                      <div class="card-header">Website and App Development</div>
+                      <div class="card-body">
+                        <li>₹<span class="money">1499</span>/-</li>
+                        <li>Course Instructor:- Asmit Mohan</li>
+                        <li>Domain Name Free</li>
+                        <li>Mobile Friendly</li>
+                        <li>Webmail Support</li>
+                        <li>Instructor Support 24/7</li>
+                      </div>
+                      <div class="card-footer">
+                       <a href="/Template/dev">Purchase</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12 card-second">
+                    <div class="card text-center">
+                        <div class="card-header">Microcontroller and Embedded Systems</div>
+                        <div class="card-body">
+                          <li>₹<span class="money">999</span>/-</li>
+                          <li>Course Instructor:- Yash Dhawan</li>
+                          <li>Free Certification</li>
+                          <li>Instrument supports</li>
+                          <li>Regular Labs</li>
+                          <li>Instructor Support 24/7</li>
+                        </div>
+                        <div class="card-footer">
+                         <a href="/Template/micro">Purchase</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                      <div class="card text-center">
+                          <div class="card-header">Data Structure and Algorithms</div>
+                          <div class="card-body">
+                            <li>₹<span class="money">2499</span>/-</li>
+                          <li>Course Instructor:- Krishanu Dev</li>
+                          <li>Free Certification</li>
+                          <li>Coding Platform Id</li>
+                          <li>Regular contest</li>
+                          <li>Instructor Support 24/7</li>
+                          </div>
+                          <div class="card-footer">
+                           <a href="/Template/dsa">Purchase</a>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+          </section>
+
+          <section class="happyclients">
+            <div class="container headings text-center">
+              <h1 class="text-center font-weight-bold">Our Placed Students</h1>
+              <P class="text-capitalize pt-1">Our Satisfied Student Says</P>
+            </div>
+
+            
+              <div class="carousel-inner container">
+                <div class="carousel-item active">
+                  <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="box">
+                        <a href="#"><img src="/images/header-bg.jpg" class="img-fluid img-thumbnail" /></a>
+
+                      <p class="m-4">
+                        This course has everything that is needed to become an entry level web developer. Everything in this course is taught step by step and in detail. I truly enjoyed learning and building an app at the end. Felt so proud of myself for making it through this course. I would 100% recommend this course to anyone who is willing to learn web development.
+                      </p>
+                      <h1>Asmit Mohan</h1>
+                      <h2>--DE SHAW & Co.</h2>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="box">
+                        <a href="#"><img src="/images/yash.jfif" class="img-fluid img-thumbnail" /></a>
+
+                      <p class="m-4">
+                        This was an excellent course, excellent content, excellent delivery by the instructor and really covered the many topics involved in working with embedded microcontrollers and C programming. I learned a lot of valuable information that will help with my current role. I will definitely continue on with the other courses they offer.
+                      </p>
+                      <h1>Yash Dhawan</h1>
+                      <h2>-- MORGAN STANLY</h2>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="box">
+                        <a href="#"><img src="/images/dada.jfif" class="img-fluid img-thumbnail" /></a>
+
+                      <p class="m-4">
+                        Excellent Course.. It was very detailed and thorough through the data structures concepts... Along with its challenges and quizzes, which were fun to solve. Thanks you very much sir for such a beautiful and detailed course.I will definitely continue on with the other courses they will offer.
+
+
+                      </p>
+                      <h1>Krishanu Dev</h1>
+                      <h2>--Google</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+              <section class="newsletter" id="newsletterid">
+                <div class="container headings text-center">
+                  <h1 class="text-center font-weight-bold">SUBSCRIBE TO OUR NEWSLETTER</h1>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8 offset-lg-2 col-12">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control news-input" placeholder="Your Email">
+                            <div class="input-group-append">
+                              <span class="input-group-text">Subscribe Now</span>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <footer class="footersection" id="footerdiv">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 footer-div">
+                            <div>
+                              <h3>ABOUT EDUCATORS</h3>
+                              <p>
+                              Educator is one of the World’s largest and cost-effective Online Learning platform. It is one place where you can get access to a plethora of courses. The best part is that courses from various domains are available and also they are available in various languages.
+
+                              In addition to that, the best part is that you can contact trainers if you have any doubts and we are happy to help you with the queries raised.
+
+
+                              </p>
+                            </div>
+                        </div>
+
+                      <div class="col-lg-4 col-md-12 col-12 footer-div text-center">
+                        <div>
+                          <h3>NAVIGATION LINKS</h3>
+                          <li><a href="http://www.mnnit.ac.in/">MERN & MEAN</a></li>
+                          <li><a href="http://www.mnnit.ac.in/swo/">KOTLIN & JAVA</a></li>
+                          <li><a href="https://academics.mnnit.ac.in/new">DJANGO & PYTHON</a></li>
+                          <li><a href="http://www.mnnit.ac.in/index.php/admission">RAS BERRY PI </a></li>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 footer-div">
+                      <div>
+                        <h3>NEWSLETTER</h3>
+                        <p>
+                          A newsletter is a printed or electronic report containing news concerning the
+                          activities of a business or an organization that is sent to its members,
+                          customers, employees or other subscribers.
+                        </p>
+
+
+                      </div>
+                     </div>
+                    </div>
+
+                    <div class="mt-5 text-center">
+                          <p>Copyright EDUCATORS & Co. © 2021 All Rights Reserved.</p>
+                    </div>
+                  
+                    <div class="scrolltop float-right">
+                        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+                    </div>
+
+                  </div>
+              </footer>
+              
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" 
+  integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $('.count').counterUp(
+    {
+      delay:10,
+      time:3000
+    });
+    
+    mybutton=document.getElementById("myBtn");
+    window.onscroll=function()
+    {
+      scrollFunction()
+    };
+
+    function scrollFunction()
+    {
+      if(document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+      {
+          mybutton.style.display="block";
+      }
+      else
+      {
+          mybutton.style.display="none";
+      }
+    }
+    function topFunction()
+    {
+      document.body.scrollTop=0;
+      document.documentElement.scrollTop=0;
+    }
+
+  </script>
+  </body>
+</html>

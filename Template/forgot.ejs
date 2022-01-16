@@ -1,0 +1,35 @@
+<%- include('header.ejs')%>
+
+<div class="main">
+<%- include('flash.ejs')%>
+<div class="container1">
+	<div class="row1">
+		 <h4><i class="fa fa-lock" aria-hidden="true"></i> Forgot</h4>
+        </div><br /><br />
+		<form action="/employee/forgot" method="post">
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+								</div>
+								<input type="text" name="email" class="form-control" placeholder="username or email" required/>
+							</div><br />
+         
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-key icon"></i></span>
+								</div>
+									<input type="Password" name="password" class="form-control" placeholder="password" required/>
+							</div><br />
+               
+              <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-off"></span>Change</button>
+               <br /> <br/>
+			</form>
+               <center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br />
+        <div class="footer">
+                  <p>Don't want to change! <a class="mail" href="/Template/signin"><strong>Sign In Here</strong></a></p>
+          <p>Or You <a class="mail" href="/Template/signup"><strong>Don't have an Account?</strong></a></p>
+        </div>
+	</div>
+</div>
+
+<%- include('footer.ejs')%>

@@ -1,0 +1,102 @@
+<%- include('header.ejs')%>
+
+    <div class="container emp-profile">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img width="500px" height="500px" src="<%= Studentpic%>" alt="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        <%= Studentusername%>
+                    </h5>
+                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#" role="tab"
+                                aria-controls="home" aria-selected="true">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>User Id</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    <%= Studentid%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Name</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    <%= Studentusername%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    <%= StudentemailProfile%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Phone</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    <%= Studentphone%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Courses</label>
+                            </div>
+                            <div class="col-md-6">
+                                <% if (Studentcourses==='Website and App Development' ) {%>
+                                    <a href="https://www.youtube.com/watch?v=EceJQ05KTf4&list=PLwoh6bBAszPrES-EOajos_E9gvRbL27wz">
+                                        <p>
+                                            <%= Studentcourses%>
+                                        </p>
+                                    </a>
+                                    <% }else if (Studentcourses==='Microcontroller and Embedded Systems' ) {%>
+                                        <a href="https://www.youtube.com/watch?v=iXSXIJn_Xwc&list=PLm_MSClsnwm9hEIDpFfDnOEu-6kVnF4ug">
+                                            <p>
+                                                <%=Studentcourses%>
+                                            </p>
+                                        </a>
+                                        <% } else {%>
+                                            <a href="https://drive.google.com/drive/folders/136rNPsmwWn3b_luLNYWwV70BZ6RGTgfv?usp=sharing">
+                                                <p>
+                                                    <%= Studentcourses%>
+                                                </p>
+                                            </a>
+                                            <% }%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('footer.ejs')%>

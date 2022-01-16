@@ -1,0 +1,18 @@
+<%- include('header.ejs')%>
+<br/><br/><br/><br/>
+<div>
+<%- include('flash.ejs')%>
+    <div class="d-flex justify-content-center align-items-center container ">
+        <div class="card py-5 px-3 border shadow p-3">
+            <h5 class="m-0">OTP verification</h5><br/><span class="mobile-text"><b class="text-success">Enter the Email registered with us </b> </span>
+            <form action="/Template/forgotEmail" method="post" autocomplete="off">
+                <div class="d-flex flex-row mt-5"><input type ="email" placeholder="Email ID" name="email" class="form-control" required/></div>
+            <div class="text-center mt-5">
+                <button type="submit" name="submit" class="btn btn-info form-control text-center">Send OTP</button>
+            </div>
+            </form>
+        </div>
+    </div>
+  </div>
+
+<%- include('footer.ejs')%>

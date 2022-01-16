@@ -1,0 +1,59 @@
+<%- include('header.ejs')%>
+<script type="text/javascript">
+	function myfunction()
+	{
+		var x=document.getElementById("myinput");
+		if(x.type==="password")
+		{
+			x.type="text";
+		}
+		else
+		{
+			x.type="password";
+		}
+	}
+</script> 
+<%- include('flash.ejs')%>
+<div class="main">
+<div class="container1">
+	<div class="row1">
+		 <h4><i class="fa fa-lock" aria-hidden="true"></i> Login</h4>
+        </div><br /><br />
+		<form action="/employee/login" method="post">
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+								</div>
+								<input type="text" name="email" class="form-control" placeholder="username or email" required/>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div><br />
+         
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-key icon"></i></span>
+								</div>
+									<input type="Password" name="password" class="form-control" placeholder="password" id="myinput" required/>
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+							</div><br />
+            <div class="checkbox">
+              <label>
+			<input type="checkbox" onclick="myfunction()" value=""/> Show Password</label>
+            </div><br />
+              <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-off"></span> Login</button>
+         
+        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-remove"></span>Login with Facebook </button><br />
+               <br /> 
+			</form>
+               <center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br />
+        <div class="footer">
+                  <p>Don't have an Account! <a class="mail" href="/Template/signup"><strong>Sign Up Here</strong></a></p>
+          <p>Forgot <a class="mail" href="/Template/forgotEmail"><strong>Password?</strong></a></p>
+        </div>
+	</div>
+</div>
+
+<%- include('footer.ejs')%>

@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+<title>Pay Here to get course</title> 
+<body> 
+	<h3><%= description%> Payment</h3> 
+	<form action="/payment/<%= description%>" method="POST"> 
+	<script
+		src="http://checkout.stripe.com/v2/checkout.js"
+		class="stripe-button"
+		data-key="<%= key %>" 
+		data-amount="<%= price%>"
+		data-currency="INR" 
+		data-name="Educators" 
+		data-description="<%= description%>" 
+		data-locale="auto" > 
+	</script> 
+	</form> 
+</body> 
+</html> 
